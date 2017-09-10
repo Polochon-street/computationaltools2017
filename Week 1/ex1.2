@@ -1,0 +1,17 @@
+#!/bin/bash
+LC_ALL=C
+sort dict |tr '[:upper:]' '[:lower:]' > dict_sorted
+if [ $# -eq 0 ]
+then
+    while read line
+    do
+        echo "$line"|grep -o -E '\w+'|sort|uniq > file_sorted
+        comm -23 file_sorted dict_sorted
+    done
+else
+    grep -o -E '\w+' "$1"|sort|tr '[:upper:]' '[:lower:]'|uniq > file_sorted
+    comm -23 file_sorted dict_sorted
+fi
+
+rm file_sorted
+rm dict_sorted
