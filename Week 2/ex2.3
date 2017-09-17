@@ -1,0 +1,29 @@
+#!/bin/python
+
+from collections import Counter
+
+"""
+Write a program that counts the number of values that are 'True'
+in a given dictionary, and then replaces all 'True' values by 1
+and all 'False' values by 0.
+Finally, return/print -1 if the dict doesn't contain the key 'Charlie',
+and the associated value if it does.
+"""
+
+dictionary = {
+    'Coucou': False,
+    'Je': True,
+    'Suis': True,
+    'Charlie': False,
+}
+
+nb_true = sum((1 for x in dictionary.values() if x == True))
+replace_expr = {True: 1, False: 0}
+
+for x in dictionary:
+    dictionary[x] = replace_expr[dictionary[x]]
+
+if 'Charlie' in dictionary.keys():
+    print(dictionary['Charlie'])
+else:
+    print(-1)

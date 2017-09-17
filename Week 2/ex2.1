@@ -1,0 +1,22 @@
+#!/bin/python
+
+def prepend_one(binlist):
+    for x in binlist:
+        x.insert(0,1)
+    return binlist
+
+def prepend_zero(binlist):
+    for x in binlist:
+        x.insert(0,0)
+    return binlist
+
+def binwalk(n):
+    if n == 1:
+        return [[0],[1]]
+    else:
+        binlist = prepend_zero(binwalk(n-1))
+        prepended_one_list = prepend_one(binwalk(n-1))
+        binlist.extend(prepended_one_list)
+        return binlist
+
+print(binwalk(3))

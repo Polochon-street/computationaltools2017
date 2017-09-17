@@ -1,0 +1,20 @@
+#!/bin/python
+
+import json
+import string
+import re
+from collections import Counter
+
+fp = open('pizza-train.json', 'r+')
+result = json.load(fp)
+
+exclude = string.punctuation
+all_text_wtht_punctuation = [''.join(ch for ch in x['request_text'] if ch not in exclude) for x in result]
+unique_words = list(set(re.split(' |\n', ' '.join(all_text_wtht_punctuation))))
+
+bag_of_words = []
+for field in result:
+    field = field['request_text']
+    counter = Counter(field)
+    row = [counter.get(w, 0) for w in unique_words]
+    bag_of_words.append(row)
