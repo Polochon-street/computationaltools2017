@@ -4,6 +4,7 @@ import json
 import string
 import re
 from collections import Counter
+from numpy import sum
 
 fp = open('pizza-train.json', 'r+')
 result = json.load(fp)
@@ -12,9 +13,15 @@ exclude = string.punctuation
 all_text_wtht_punctuation = [''.join(ch for ch in x['request_text'] if ch not in exclude) for x in result]
 unique_words = list(set(re.split(' |\n', ' '.join(all_text_wtht_punctuation))))
 
+hungry_index = unique_words.index('hungry')
+
 bag_of_words = []
 for field in result:
-    field = field['request_text']
-    counter = Counter(field)
+    text_without_punct = [''.join(ch for ch in field['request_text'] if ch not in exclude)]
+    words = re.split(' |\n', ' '.join(text_without_punct))
+    counter = Counter(words)
     row = [counter.get(w, 0) for w in unique_words]
     bag_of_words.append(row)
+
+sum_arr = [x[hungry_index] for x in bag_of_words]
+print(sum(sum_arr))
