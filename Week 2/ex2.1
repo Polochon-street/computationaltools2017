@@ -1,21 +1,30 @@
 #!/bin/python
 
+# Function used to prepend one to a list
+# For example, prepend_one([0,0]) will output [1, 0, 0]
 def prepend_one(binlist):
     for x in binlist:
         x.insert(0,1)
     return binlist
 
+# Function used to prepend zero to a list
+# For example, prepend_zero([0,0]) will output [0, 0, 0]
 def prepend_zero(binlist):
     for x in binlist:
         x.insert(0,0)
     return binlist
 
 def binwalk(n):
+    # Recursive function base case
     if n == 1:
         return [[0],[1]]
+    # Go from L to [[1,L],[0,L]]
     else:
+        # Compute [0,L]
         binlist = prepend_zero(binwalk(n-1))
+        # Compute [1,L]
         prepended_one_list = prepend_one(binwalk(n-1))
+        # Put everything together
         binlist.extend(prepended_one_list)
         return binlist
 

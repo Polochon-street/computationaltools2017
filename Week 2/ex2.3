@@ -10,6 +10,7 @@ Finally, return/print -1 if the dict doesn't contain the key 'Charlie',
 and the associated value if it does.
 """
 
+# Initial dictionary
 dictionary = {
     'Coucou': False,
     'Je': True,
@@ -17,12 +18,16 @@ dictionary = {
     'Charlie': False,
 }
 
+# Compute the number of 'True' values in dict
 nb_true = sum((1 for x in dictionary.values() if x == True))
-replace_expr = {True: 1, False: 0}
 
+# Replace 'True' by 1 and 'False' by 0
+replace_expr = {True: 1, False: 0}
 for x in dictionary:
     dictionary[x] = replace_expr[dictionary[x]]
 
+# Check if the dict contains a 'Charlie' key
+# Displays the value if so, if not, display -1
 if 'Charlie' in dictionary.keys():
     print(dictionary['Charlie'])
 else:

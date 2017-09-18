@@ -6,22 +6,33 @@ import re
 from collections import Counter
 from numpy import sum
 
+# Open and load the training file
 fp = open('pizza-train.json', 'r+')
 result = json.load(fp)
 
+# Load a list of punctuation symbols
 exclude = string.punctuation
+# Make a list of all texts with punctuation stripped off
 all_text_wtht_punctuation = [''.join(ch for ch in x['request_text'] if ch not in exclude) for x in result]
+# Make a list of every unique word of all texts
 unique_words = list(set(re.split(' |\n', ' '.join(all_text_wtht_punctuation))))
 
 hungry_index = unique_words.index('hungry')
 
 bag_of_words = []
+# For every text in the json file
 for field in result:
+    # Strip the punctuation off the text
     text_without_punct = [''.join(ch for ch in field['request_text'] if ch not in exclude)]
+    # Make a list of all words of the current text
     words = re.split(' |\n', ' '.join(text_without_punct))
+    # Count all occurences of every word in the current text
     counter = Counter(words)
+    # Make the matrix row
     row = [counter.get(w, 0) for w in unique_words]
+    # Append the row to the global matrix
     bag_of_words.append(row)
 
+# Compute all the occurences of the word "hungry" for example
 sum_arr = [x[hungry_index] for x in bag_of_words]
 print(sum(sum_arr))
