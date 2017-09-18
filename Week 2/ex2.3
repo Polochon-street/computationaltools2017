@@ -1,34 +1,23 @@
 #!/bin/python
 
-from collections import Counter
-
-"""
-Write a program that counts the number of values that are 'True'
-in a given dictionary, and then replaces all 'True' values by 1
-and all 'False' values by 0.
-Finally, return/print -1 if the dict doesn't contain the key 'Charlie',
-and the associated value if it does.
-"""
-
-# Initial dictionary
-dictionary = {
-    'Coucou': False,
-    'Je': True,
-    'Suis': True,
-    'Charlie': False,
+users = {
+    "alice": "password1",
+    "bob": "password2",
+    "charlie": "password3",
+    "eve": "password4"
 }
 
-# Compute the number of 'True' values in dict
-nb_true = sum((1 for x in dictionary.values() if x == True))
+# Accept login function returns True if we provide
+# the right password for an existing user and False otherwise
+def accept_login(users, username, password):
+    if username in users and users[username] == password:
+        return True
+    else:
+        return False
 
-# Replace 'True' by 1 and 'False' by 0
-replace_expr = {True: 1, False: 0}
-for x in dictionary:
-    dictionary[x] = replace_expr[dictionary[x]]
+# Small tests
+if accept_login(users, "alice", "password1"):
+    print('Alice logged in successfully.')
 
-# Check if the dict contains a 'Charlie' key
-# Displays the value if so, if not, display -1
-if 'Charlie' in dictionary.keys():
-    print(dictionary['Charlie'])
-else:
-    print(-1)
+if accept_login(users, "charlie", "garbage"):
+    print('Access denied.')
