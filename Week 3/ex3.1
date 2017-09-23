@@ -1,0 +1,10 @@
+#!/bin/python
+
+import numpy as np
+
+A = np.loadtxt('matrix.mat', delimiter=',')
+b = A[:, -1]
+A = A[:, 0:-1]
+
+result = np.linalg.solve(A,b)
+print(result)

@@ -1,0 +1,12 @@
+#!/bin/python
+
+from scipy.interpolate import interp1d
+import numpy as np
+import matplotlib.pyplot as plt
+
+A = np.loadtxt('coords.mat')
+f = interp1d(A[:,0], A[:,1])
+
+plt.plot(A[:,0], A[:,1])
+plt.plot(A[:,0], f(A[:,0]), 'ro')
+plt.show()
