@@ -2,9 +2,13 @@
 
 import numpy as np
 
+# Load the txt file into a matrix A
 A = np.loadtxt('matrix.mat', delimiter=',')
+# Take the last column of the matrix
 b = A[:, -1]
+# Take the first 3 columns of the matrix
 A = A[:, 0:-1]
 
+# Solve Ax = b
 result = np.linalg.solve(A,b)
 print(result)
