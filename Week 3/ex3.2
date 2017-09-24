@@ -1,12 +1,22 @@
 #!/bin/python
 
-from scipy.interpolate import interp1d
+import scipy.optimize as opt
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Load the file in a matrix
 A = np.loadtxt('coords.mat')
-f = interp1d(A[:,0], A[:,1])
+# Interpolate the list with a polynomial of degree 3
+f = np.polyfit(A[:,0], A[:,1], deg=3)
+# Use np.poly1d on the polynomial coefficients to get
+# an easy-to-use polynomial
+p = np.poly1d(f)
+# Find the root using Brent's method on the defined interval
+root = opt.brentq(p, A[0,1], A[-1,0])
 
+# Plot the curve
 plt.plot(A[:,0], A[:,1])
-plt.plot(A[:,0], f(A[:,0]), 'ro')
+# Check that the root is actually a root
+plt.plot(root, p(root), 'ro')
+plt.axhline(y=0, color='black')
 plt.show()
