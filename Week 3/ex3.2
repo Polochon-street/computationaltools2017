@@ -13,6 +13,7 @@ f = np.polyfit(A[:,0], A[:,1], deg=3)
 p = np.poly1d(f)
 # Find the root using Brent's method on the defined interval
 root = opt.brentq(p, A[0,1], A[-1,0])
+print(root)
 
 # Plot the curve
 plt.plot(A[:,0], A[:,1])

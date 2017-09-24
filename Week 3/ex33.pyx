@@ -1,6 +1,6 @@
 #!/bin/python3
 
-float a = 0
+cdef float a = 0
 
 for iteration in range(500):
     a = 0
