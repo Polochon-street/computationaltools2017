@@ -1,7 +1,5 @@
 #!/bin/python3
 
-a = 0
-
 for iteration in range(500):
     a = 0
     for x in range(1,10001):
