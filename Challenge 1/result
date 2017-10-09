@@ -1,0 +1,33 @@
+Articles article_cat
+Pattern cat[0,10]are[0,10]to:
+10 matching patterns found, for an execution time of 0.03417s
+Pattern cat[0,100]anatomy:
+11 matching patterns found, for an execution time of 0.003116s
+Pattern china[30,150]washington:
+1 matching patterns found, for an execution time of 0.0009551s
+Pattern english[0,200]cat:
+38 matching patterns found, for an execution time of 0.001572s
+Pattern kitten[15,85]cat[0,100]sire[0,200]oxford:
+2 matching patterns found, for an execution time of 0.001181s
+Articles articles_a
+Pattern arnold[0,10]schwarzenegger[0,10]is:
+14 matching patterns found, for an execution time of 22.3s
+Pattern apache[0,100]software:
+1531 matching patterns found, for an execution time of 21.7s
+Pattern aarhus[30,150]denmark:
+559 matching patterns found, for an execution time of 21.21s
+Pattern english[0,100]alphabet:
+188 matching patterns found, for an execution time of 21.9s
+Pattern first[0,85]letter[0,100]alphabet[0,200]consonant:
+3 matching patterns found, for an execution time of 21.49s
+Articles articles_all
+Pattern elephants[0,20]are[0,20]to:
+208 matching patterns found, for an execution time of 637.9s
+Pattern technical[0,20]university[0,20]denmark:
+756 matching patterns found, for an execution time of 637.9s
+Pattern testing[0,20]with[0,20]a[0,30]lot[0,4]of[0,5]words:
+0 matching patterns found, for an execution time of 638.2s
+Pattern stress[0,250]test:
+8976 matching patterns found, for an execution time of 637.3s
+Pattern object[10,200]application[0,100]python[10,200]system[0,100]computer[0,10]science[0,150]linux[0,200]ruby:
+1 matching patterns found, for an execution time of 637.5s
