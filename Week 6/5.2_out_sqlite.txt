@@ -1,0 +1,17 @@
+Orders that contain at least 2 different product types:
+Order 10643:
+Ordered Spegesild, product ID 46
+Ordered Chartreuse verte, product ID 39
+Ordered Rössle Sauerkraut, product ID 28
+Order 10702:
+Ordered Lakkalikööri, product ID 76
+Ordered Aniseed Syrup, product ID 3
+Order 10835:
+Ordered Original Frankfurter grüne Soße, product ID 77
+Ordered Raclette Courdavault, product ID 59
+Order 10952:
+Ordered Rössle Sauerkraut, product ID 28
+Ordered Grandma's Boysenberry Spread, product ID 6
+Order 11011:
+Ordered Flotemysost, product ID 71
+Ordered Escargots de Bourgogne, product ID 58
