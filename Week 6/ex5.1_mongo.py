@@ -1,5 +1,4 @@
 from pymongo import MongoClient
-import pprint
 
 # Connect to the mongo database
 client = MongoClient()
