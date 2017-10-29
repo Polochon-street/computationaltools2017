@@ -12,13 +12,13 @@ class MRWordFrequencyCount(MRJob):
     def mapper(self, key, line):
         # Deleting non-alpha characters from the line
         words = ''.join(char for char in line if char not in exclude).split()
-        # Count the occurences of each word in the line and iterate over them
+        # Count the occurrences of each word in the line and iterate over them
         for word, count in dict(Counter(words)).items():
             # "Return" for each word the associated count
             yield word, count 
 
     def reducer(self, key, values):
-        # Return for each word the sum of occurences in each line
+        # Return for each word the sum of occurrences in each line
         yield key, sum(values)
 
 if __name__ == '__main__':
