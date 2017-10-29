@@ -1,0 +1,4 @@
+There is three times the word 'times' in this text.
+There is also four lines.
+It works even when I put a comma after times, like this.
+I like trains.
