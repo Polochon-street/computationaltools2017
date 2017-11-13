@@ -1,0 +1,13 @@
+5_2qh1i/t5_2qh33', 't5_2qh1i/t5_2qh0u', 't5_2qh1i/t5_2qqjc', 't5_2qh1i/t5_2qh1e', 't5_2qh33/t5_2qh1i', 't5_2qh33/t5_2qh0u', 't5_2qh0u/t5_2qh1i', 't5_2qh0u/t5_2qh33', 't5_2qh1i/t5_2s7tt', 't5_2qh1i/t5_2qh61']
+Top ten:
+The subs ('AskReddit',) and ('funny',) have 87346 common authors.
+The subs ('AskReddit',) and ('pics',) have 85682 common authors.
+The subs ('AskReddit',) and ('todayilearned',) have 68637 common authors.
+The subs ('AskReddit',) and ('videos',) have 57712 common authors.
+The subs ('funny',) and ('AskReddit',) have 54442 common authors.
+The subs ('funny',) and ('pics',) have 53344 common authors.
+The subs ('pics',) and ('AskReddit',) have 52990 common authors.
+The subs ('pics',) and ('funny',) have 51559 common authors.
+The subs ('AskReddit',) and ('AdviceAnimals',) have 51148 common authors.
+The subs ('AskReddit',) and ('WTF',) have 47204 common authors.
+
