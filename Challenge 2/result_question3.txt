@@ -1,0 +1,4 @@
+polochon@why-polochon /test $ time python assignment3.py                                                                                                                                                    [143]
+[('counting', 510.79488999290277), ('EroticRolePlay', 281.7894736842105), ('SburbRP', 268.35526315789474), ('TheTwoCenturions', 147.77777777777777), ('ExploreFiction', 78.82142857142857), ('roleplayponies', 74.0), ('DigitalMonsterRP', 70.0), ('TTPloreplaycentral', 67.751550529004), ('LOKRPFriendFics', 64.5), ('GalacticGuardians', 64.23076923076923)]
+0.6930854479388042
+python assignment3.py  515,52s user 406,21s system 32% cpu 47:31,57 total
