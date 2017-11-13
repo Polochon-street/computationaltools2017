@@ -1,0 +1,4 @@
+polochon@Paul-arch-coucou Challenge 2 $ time python assignment1.py                                                                                            [0]
+[('pics', 't5_2qh1i', 552165), ('funny', 't5_2qh33', 220334), ('worldnews', 't5_2qh0u', 206008), ('AskReddit', 't5_2s7tt', 136510),  ('todayilearned', 't5_2qh13', 192090), ('subredditreports', 't5_2qqjc', 188578), ('videos', 't5_2rfxx', 161670), ('leagueoflegends', 't5_2qh1e', 186890), ('pcmasterrace', 't5_2sgp1', 152096), ('AdviceAnimals', 't5_30uy0', 188477)]
+python assignment.py  1088,85s user 334,72s system 54% cpu 43:32,76 total
+polochon@Paul-arch-coucou Challenge 2 $
