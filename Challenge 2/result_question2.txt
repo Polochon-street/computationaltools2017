@@ -1,13 +1,13 @@
-5_2qh1i/t5_2qh33', 't5_2qh1i/t5_2qh0u', 't5_2qh1i/t5_2qqjc', 't5_2qh1i/t5_2qh1e', 't5_2qh33/t5_2qh1i', 't5_2qh33/t5_2qh0u', 't5_2qh0u/t5_2qh1i', 't5_2qh0u/t5_2qh33', 't5_2qh1i/t5_2s7tt', 't5_2qh1i/t5_2qh61']
+polochon@why-polochon /test $ time python question2.py                                                                                                                                                        [0]
 Top ten:
-The subs ('AskReddit',) and ('funny',) have 87346 common authors.
-The subs ('AskReddit',) and ('pics',) have 85682 common authors.
-The subs ('AskReddit',) and ('todayilearned',) have 68637 common authors.
-The subs ('AskReddit',) and ('videos',) have 57712 common authors.
-The subs ('funny',) and ('AskReddit',) have 54442 common authors.
-The subs ('funny',) and ('pics',) have 53344 common authors.
-The subs ('pics',) and ('AskReddit',) have 52990 common authors.
-The subs ('pics',) and ('funny',) have 51559 common authors.
-The subs ('AskReddit',) and ('AdviceAnimals',) have 51148 common authors.
-The subs ('AskReddit',) and ('WTF',) have 47204 common authors.
-
+The subs AskReddit (ID t5_2qh1i) and funny (ID t5_2qh33) have 141787 common authors.
+The subs pics (ID t5_2qh0u) and AskReddit (ID t5_2qh1i) have 138671 common authors.
+The subs AskReddit (ID t5_2qh1i) and todayilearned (ID t5_2qqjc) have 105137 common authors.
+The subs pics (ID t5_2qh0u) and funny (ID t5_2qh33) have 104902 common authors.
+The subs videos (ID t5_2qh1e) and AskReddit (ID t5_2qh1i) have 91974 common authors.
+The subs AskReddit (ID t5_2qh1i) and AdviceAnimals (ID t5_2s7tt) have 84456 common authors.
+The subs funny (ID t5_2qh33) and todayilearned (ID t5_2qqjc) have 71663 common authors.
+The subs pics (ID t5_2qh0u) and todayilearned (ID t5_2qqjc) have 71556 common authors.
+The subs AskReddit (ID t5_2qh1i) and WTF (ID t5_2qh61) have 71246 common authors.
+The subs pics (ID t5_2qh0u) and videos (ID t5_2qh1e) have 67089 common authors.
+python question2.py  607,33s user 748,25s system 26% cpu 1:24:12,62 total
