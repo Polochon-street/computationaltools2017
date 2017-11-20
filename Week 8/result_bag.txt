@@ -1,0 +1,5 @@
+polochon@Paul-arch-coucou week10 $ time python ex10.1_bag.py                                                                                                                     [0]
+The bag of words is of size 10377x70794
+Score on the test set: 91.7%
+python ex10.1_bag.py  324,55s user 2,64s system 99% cpu 5:27,48 total
+polochon@Paul-arch-coucou week10 $ 

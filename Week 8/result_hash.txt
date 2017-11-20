@@ -1,0 +1,5 @@
+polochon@Paul-arch-coucou week10 $ time python ex10.1_hash.py                                                                                                                    [0]
+The final matrix is of size 10377x1000
+Score on the test set: 94.1%
+python ex10.1_hash.py  4,05s user 0,04s system 99% cpu 4,111 total
+polochon@Paul-arch-coucou week10 $     
