@@ -1,0 +1,2 @@
+Rand-index is 0.6396874744949973
+python challenge3.py  19754,15s user 1248,49s system 145% cpu 4:01:16,69 total
